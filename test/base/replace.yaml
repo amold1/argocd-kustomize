@@ -1,0 +1,10 @@
+source:
+  kind: ConfigMap
+  name: my-cm
+  fieldPath: data.foo
+targets:
+  - select:
+      name: adeodhar-test-1
+      kind: Namespace
+    fieldPaths:
+    - metadata.labels.replacement_var
