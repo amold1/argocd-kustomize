@@ -4,5 +4,4 @@ metadata:
   name: my-cm
   namespace: argocd
 data:
-  foo: 1
-
+  foo: bar
